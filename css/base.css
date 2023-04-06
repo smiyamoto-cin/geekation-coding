@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* reset */
-body, h1, h2, h3, h4, h5, h6, p, address,
+body,h2, h3, h4, h5, h6, p, address,
 ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
 	margin: 0;
 	padding: 0;
@@ -9,7 +9,6 @@ ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
 	font-weight: normal;
 	font-size: 100%;
 	text-align: left;
-	list-style-type: none;
 	border-collapse: collapse;
 }
 
@@ -32,4 +31,227 @@ body {
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+.food-text {
+	display: flex;
+}
+.address-box {
+	background-color: black;
+	margin-left: 0.5rem;
+	margin-top:2rem;
+	margin-right: 0.5rem;
+	padding: 1rem;
+}
+.address {
+	color: white;
+}
+.address-text {
+	color: white;
+}
+.address-time {
+	color: white;
+}
+
+.img-fluid-barista {
+	margin-top:1rem;
+	margin-bottom: 1rem;
+	margin-right:1rem;
+	margin-left: 4rem;
+	width: 80%;
+	height: auto;
+}
+
+.address {
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+.address-time {
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+.comment-box {
+	margin-bottom: 3rem;
+}
+body {
+	background-color: #FFEFD5;
+}
+
+ul {
+	font-size: smaller;
+	margin-left: 1rem;
+}
+h1 {
+	font-size: 1.7rem;
+}
+.navbar {
+    background-color: lightgray;
+}
+.navbar-brand{
+    font-weight: bold;
+}
+
+.text{
+    font-weight: lighter;
+}
+.collapse {
+    display: flex;
+ justify-content: flex-end; 
+}
+li{
+    margin-bottom:0.5rem;
+}
+
+.menu {
+	font-weight: bold;
+}
+.footer {
+	background-color: lightgray;
+	
+}
+.footer ul{
+	list-style: none; 
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+.md-flex li {
+	height: 3rem;
+	line-height: 3rem;
+	margin-right: 0.5rem;
+}
+.shop-box {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 10rem;
+	margin-right: 10rem;
+}
+.shibuya {
+	border-radius: 50%;
+	height: 13rem;
+	width: 13rem;
+	object-fit: cover;
+}
+.shop-address {
+	font-size: smaller;
+}
+.shop {
+	text-align: center;
+	margin: 1rem;
+	font-size: 1.5rem;
+}
+.dli-pin-fill {
+	display: inline-block;
+	vertical-align: middle;
+	color: #333;
+	line-height: 1;
+	position: relative;
+	width: 0.8em;
+	height: 0.8em;
+	background: currentColor;
+	border: 0.1em solid currentColor;
+	border-radius: 40% 60% 0% 100% / 40% 100% 0% 60%;
+	box-sizing: content-box;
+	transform: rotate(45deg);
+  }
+  
+  .dli-pin-fill::before {
+	content: '';
+	position: absolute;
+	top: 18%;
+	left: 18%;
+	width: 0.336em;
+	height: 0.336em;
+	background: #fff;
+	border-radius: 50%;
+	box-sizing: border-box;
+  }
+ 
+  .info {
+	list-style: none;
+	background-color: #FFC7AF;
+	font-size: large;
+	margin:0.07rem;
+}
+.fade-in {
+	opacity: 0;
+  }
+.fade-in.appear {
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+  }
+.address-box {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+.address-box.show{
+	opacity: 1;
+}
+.shop-box{
+	opacity: 0; 
+  transition: opacity 1s ease-in-out;
+}
+.shop-box.show {
+	opacity: 1; 
+}
+.slideshow-container {
+	overflow: hidden;
+	position: relative;
+	margin: 0 calc(50% - 50vw);
+	width: 100vw;
+	 
+  }
+  
+  .slideshow {
+	display: flex;
+	width: 115%;
+	height: 100%;
+	position: relative;
+	transition: transform 0.5s ease-in-out;
+  }
+  
+  .slideshow img {
+	width: 50%;
+	height: 100%;
+	
+  }
+  
+/*ドット*/
+.dots {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  
+  .dot {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin: 0 10px;
+	border-radius: 50%;
+	background-color: white;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+	background-color: #555;
+  }
+.container-fluid{
+	padding: 0;
+}
+@media (max-width: 375px) {
+	/* 横幅が375px以下の場合に適用するスタイル */
+	.slideshow-container{
+		margin: 2rem;
+		height: 300px;
+		width: 350px;
+	}
+ }
+ @media (min-width: 1200px) {
+	/* 横幅が1200以上の場合に適用するスタイル */
+	.food-img{
+		width: 100%;
+	}
 }
